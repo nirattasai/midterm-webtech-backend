@@ -1,3 +1,4 @@
-# Strapi application
+ขั้นตอนในการลง
 
-A quick description of your strapi application
+1. รันคำสั่ง npm install
+2. รันคำสั่ง npm run develop
