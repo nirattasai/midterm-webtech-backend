@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "name": "Topics",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isHead": {
+      "type": "boolean"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "owner": {
+      "via": "topics",
+      "model": "users"
+    },
+    "liked": {
+      "type": "biginteger",
+      "default": "0",
+      "required": false
+    },
+    "isChild": {
+      "type": "boolean"
+    },
+    "parrentID": {
+      "type": "biginteger"
+    }
+  }
+}

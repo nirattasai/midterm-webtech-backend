@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rewards",
+  "info": {
+    "name": "Rewards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "describtion": {
+      "type": "richtext"
+    },
+    "remain": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "point_used": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "user_rewards": {
+      "via": "rewards",
+      "collection": "user-rewards"
+    }
+  }
+}

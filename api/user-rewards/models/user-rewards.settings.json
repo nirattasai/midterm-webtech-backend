@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_rewards",
+  "info": {
+    "name": "user_rewards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "via": "user_rewards",
+      "collection": "users",
+      "dominant": true
+    },
+    "rewards": {
+      "collection": "rewards",
+      "via": "user_rewards",
+      "dominant": true
+    }
+  }
+}

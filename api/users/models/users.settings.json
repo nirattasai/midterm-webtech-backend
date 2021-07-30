@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users",
+  "info": {
+    "name": "Users",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "name": {
+      "type": "string"
+    },
+    "point_all": {
+      "type": "integer",
+      "default": 0
+    },
+    "point_used": {
+      "type": "integer",
+      "default": 0
+    },
+    "point_remain": {
+      "default": 0,
+      "type": "integer"
+    },
+    "topics": {
+      "via": "owner",
+      "collection": "topics"
+    },
+    "user_rewards": {
+      "via": "user_id",
+      "collection": "user-rewards"
+    },
+    "user_points": {
+      "via": "user_ids",
+      "collection": "user-points"
+    },
+    "roles": {
+      "type": "enumeration",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user"
+    }
+  }
+}
