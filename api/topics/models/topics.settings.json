@@ -18,10 +18,6 @@
     "text": {
       "type": "richtext"
     },
-    "owner": {
-      "via": "topics",
-      "model": "users"
-    },
     "liked": {
       "type": "biginteger",
       "default": "0",
@@ -32,6 +28,11 @@
     },
     "parrentID": {
       "type": "biginteger"
+    },
+    "owner": {
+      "via": "topics",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

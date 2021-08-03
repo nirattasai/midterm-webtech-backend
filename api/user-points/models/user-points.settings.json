@@ -11,14 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user_ids": {
-      "via": "user_points",
-      "collection": "users",
-      "dominant": true
-    },
     "points": {
       "type": "biginteger",
       "default": "0"
+    },
+    "user_ids": {
+      "via": "user_points",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
