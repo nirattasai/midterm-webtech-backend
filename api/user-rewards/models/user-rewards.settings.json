@@ -11,15 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user_id": {
-      "via": "user_rewards",
-      "collection": "users",
-      "dominant": true
-    },
     "rewards": {
       "collection": "rewards",
       "via": "user_rewards",
       "dominant": true
+    },
+    "user_id": {
+      "via": "user_rewards",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
