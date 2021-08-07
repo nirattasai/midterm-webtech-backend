@@ -75,22 +75,20 @@
       "collection": "topics",
       "via": "owner"
     },
-    "user_rewards": {
-      "collection": "user-rewards",
-      "via": "user_id",
-      "dominant": true
-    },
-    "user_points": {
-      "collection": "user-points",
-      "via": "user_ids",
-      "dominant": true
-    },
     "name": {
       "type": "string"
     },
     "isAdmin": {
       "type": "boolean",
       "default": false
+    },
+    "user_points": {
+      "via": "user_id",
+      "collection": "user-points"
+    },
+    "user_rewards": {
+      "via": "user_id",
+      "collection": "user-rewards"
     }
   }
 }

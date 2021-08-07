@@ -2,24 +2,24 @@
   "kind": "collectionType",
   "collectionName": "user_rewards",
   "info": {
-    "name": "user_rewards"
+    "name": "user_rewards",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "rewards": {
-      "collection": "rewards",
-      "via": "user_rewards",
-      "dominant": true
+    "reward": {
+      "model": "rewards",
+      "via": "user_rewards"
     },
     "user_id": {
-      "via": "user_rewards",
       "plugin": "users-permissions",
-      "collection": "user"
+      "model": "user",
+      "via": "user_rewards"
     }
   }
 }
