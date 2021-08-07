@@ -71,16 +71,6 @@
       "type": "integer",
       "default": 0
     },
-    "user_rewards": {
-      "collection": "user-rewards",
-      "via": "user_id",
-      "dominant": true
-    },
-    "user_points": {
-      "collection": "user-points",
-      "via": "user_ids",
-      "dominant": true
-    },
     "name": {
       "type": "string"
     },
@@ -95,6 +85,14 @@
     "comments": {
       "via": "users_permissions_user",
       "collection": "comment"
+    },
+    "user_points": {
+      "via": "user_id",
+      "collection": "user-points"
+    },
+    "user_rewards": {
+      "via": "user_id",
+      "collection": "user-rewards"
     }
   }
 }
