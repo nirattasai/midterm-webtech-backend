@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "rewards",
   "info": {
-    "name": "Rewards"
+    "name": "Rewards",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,10 @@
     "user_rewards": {
       "via": "reward",
       "collection": "user-rewards"
+    },
+    "image_path": {
+      "type": "text",
+      "required": false
     }
   }
 }
