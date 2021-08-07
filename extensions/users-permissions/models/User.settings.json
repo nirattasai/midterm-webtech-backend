@@ -71,16 +71,20 @@
       "type": "integer",
       "default": 0
     },
-    "topics": {
-      "collection": "topics",
-      "via": "owner"
-    },
     "name": {
       "type": "string"
     },
     "isAdmin": {
       "type": "boolean",
       "default": false
+    },
+    "posts": {
+      "via": "users_permissions_user",
+      "collection": "posts"
+    },
+    "comments": {
+      "via": "users_permissions_user",
+      "collection": "comment"
     },
     "user_points": {
       "via": "user_id",
