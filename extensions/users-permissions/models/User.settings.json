@@ -71,10 +71,6 @@
       "type": "integer",
       "default": 0
     },
-    "topics": {
-      "collection": "topics",
-      "via": "owner"
-    },
     "user_rewards": {
       "collection": "user-rewards",
       "via": "user_id",
@@ -91,6 +87,14 @@
     "isAdmin": {
       "type": "boolean",
       "default": false
+    },
+    "posts": {
+      "via": "users_permissions_user",
+      "collection": "posts"
+    },
+    "comments": {
+      "via": "users_permissions_user",
+      "collection": "comment"
     }
   }
 }
