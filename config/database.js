@@ -6,6 +6,7 @@ module.exports = ({ env }) => ({
       settings: {
         client: 'sqlite',
         filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        timezone: 'Asia/Bangkok',
       },
       options: {
         useNullAsDefault: true,
