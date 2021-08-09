@@ -10,6 +10,9 @@
 npm install
 ```
 
+## Frontend
+https://github.com/Ford-Narongrit/midterm-webtech-frontend/
+
 ## Develop
 ```
 npm run develop
