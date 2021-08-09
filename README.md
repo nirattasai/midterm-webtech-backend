@@ -11,7 +11,7 @@ npm install
 ```
 
 ## Frontend
-https://github.com/Ford-Narongrit/midterm-webtech-frontend/blob/main/README.md
+https://github.com/Ford-Narongrit/midterm-webtech-frontend/
 
 ## Develop
 ```
